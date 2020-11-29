@@ -1,0 +1,23 @@
+<p style="color:red;"><?php echo $_SESSION['msg1'];?><?php echo $_SESSION['msg1']="";?></p>
+<form name="chngpwd" action="update.php" method="post" onSubmit="return valid();">
+<table align="center">
+<tr height="50">
+<td>Email Address :</td>
+<td><input type="text" name="emailaddress" id="emailaddress"></td>
+<td>Old Password :</td>
+<td><input type="password" name="password1" id="password1"></td>
+</tr>
+<tr height="50">
+<td>New Passowrd :</td>
+<td><input type="password" name="password2" id="password2"></td>
+</tr>
+<tr height="50">
+<td>Confirm Password :</td>
+<td><input type="password" name="password3" id="password3"></td>
+</tr>
+<tr>
+<td><a href="login.php">Back to login Page</a></td>
+<td><input type="submit" name="Submit" value="Change Password" /></td>
+</tr>
+ </table>
+</form>
